@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>My Projects</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Comic+Neue:wght@700&display=swap');
+
+    body {
+      margin: 0;
+      padding: 0;
+      background: #fff8dc;
+      font-family: 'Helvetica Neue', sans-serif;
+      color: #333;
+    }
+
+    /* Navigation Styling */
+    .nav {
+      background: #fff;
+      padding: 1rem;
+      border-bottom: 1px solid #ddd;
+      position: sticky;
+      top: 0;
+
+    }
+
+    .nav ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      gap: 1.5rem;
+      flex-wrap: wrap;
+    }
+
+    .nav ul li a {
+      text-decoration: none;
+      color: #333;
+      padding: 0.5rem 1rem;
+      border-radius: 6px;
+      transition: background-color 0.3s ease, color 0.3s ease;
+    }
+
+    .nav ul li a:hover,
+    .nav ul li a.active {
+      background-color: #eef;
+      color: #000;
+    }
+
+    /* Funny Page Styling */
+    header.main-header {
+      background-color: #eedce5;
+      color: #000;
+      padding: 2rem;
+      text-align: center;
+      box-shadow: 0 0 10px rgb(245, 244, 244);
+    }
+
+    header.main-header h1 {
+      font-size: 2.5rem;
+      margin-bottom: 0.5rem;
+    }
+
+    header.main-header p {
+      font-style: italic;
+    }
+
+    .projects-section {
+      max-width: 1000px;
+      margin: auto;
+      padding: 2rem;
+      font-family: Arial, sans-serif;
+    }
+    .projects-section h2 {
+      text-align: center;
+      margin-bottom: 2rem;
+    }
+    .projects-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+      gap: 2rem;
+    }
+    .project-card {
+      background: #ffffff;
+      border-left: 6px solid #f0b57f;
+      padding: 1.5rem;
+      border-radius: 10px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+      transition: transform 0.3s ease;
+    }
+    .project-card:hover {
+      transform: translateY(-5px);
+    }
+    .project-title {
+      font-size: 1.25rem;
+      color: #000;
+      margin-bottom: 0.5rem;
+    }
+    .project-role,
+    .project-company {
+      font-size: 0.95rem;
+      color: #666;
+      margin-bottom: 0.5rem;
+    }
+    .project-description {
+      margin-top: 0.5rem;
+      padding-left: 1rem;
+    }
+    .project-description li {
+      margin-bottom: 0.5rem;
+    }
+
+
+    footer {
+      text-align: center;
+      padding: 2rem;
+      font-size: 0.9rem;
+      background-color: #fff0f5;
+    }
+    
+  </style>
+</head>
+<body>
+
+  <!-- Funny Nav Bar -->
+  <header class="nav">
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="#services">Work with Me</a></li>
+        <li><a href="portfolio.html" class="active">Portfolio</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#contact">Let's Chat</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Funny Page Title -->
+  <header class="main-header">
+    <h1>My Projects</h1>
+  </header>
+
+<section class="projects-section">
+  <div class="projects-grid">
+
+    <!-- Project 1 -->
+    <div class="project-card">
+      <h3 class="project-title">Onboarding & Training System Overhaul</h3>
+      <p class="project-role"><strong>Role:</strong> Process Analyst / Training & Development Specialist</p>
+      <p class="project-company"><strong>Company:</strong> Nan Ya Plastics Corp. — SC, US | <em>Feb 2024 – Present</em></p>
+      <ul class="project-description">
+      
+      </ul>
+    </div>
+
+    <!-- Project 2 -->
+    <div class="project-card">
+      <h3 class="project-title">Data Insights for Postsecondary Education</h3>
+      <p class="project-role"><strong>Role:</strong> Data Analyst Intern</p>
+      <p class="project-company"><strong>Company:</strong> Eduscape & NWCCU — Remote, US | <em>May – Aug 2023</em></p>
+      <ul class="project-description">
+
+      </ul>
+    </div>
+
+  
+
+  </div>
+</section>
+
+
+  <footer>
+    Built with ☕, 💻, and questionable design choices. Copyright © Me.
+  </footer>
+
+</body>
+</html>
