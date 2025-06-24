@@ -2,178 +2,138 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>My Projects</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Iris Wu – Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
   <style>
-    @import url('https://fonts.googleapis.com/css2?family=Comic+Neue:wght@700&display=swap');
-
     body {
+      font-family: 'Noto Sans', sans-serif;
       margin: 0;
       padding: 0;
-      background: #fff8dc;
-      font-family: 'Helvetica Neue', sans-serif;
+      background: #f9f9f9;
       color: #333;
     }
-
-    /* Navigation Styling */
-    .nav {
-      background: #fff;
-      padding: 1rem;
-      border-bottom: 1px solid #ddd;
-      position: sticky;
-      top: 0;
-
-    }
-
-    .nav ul {
-      list-style: none;
-      margin: 0;
-      padding: 0;
-      display: flex;
-      justify-content: center;
-      gap: 1.5rem;
-      flex-wrap: wrap;
-    }
-
-    .nav ul li a {
-      text-decoration: none;
-      color: #333;
-      padding: 0.5rem 1rem;
-      border-radius: 6px;
-      transition: background-color 0.3s ease, color 0.3s ease;
-    }
-
-    .nav ul li a:hover,
-    .nav ul li a.active {
-      background-color: #eef;
-      color: #000;
-    }
-
-    /* Funny Page Styling */
-    header.main-header {
-      background-color: #eedce5;
-      color: #000;
-      padding: 2rem;
-      text-align: center;
-      box-shadow: 0 0 10px rgb(245, 244, 244);
-    }
-
-    header.main-header h1 {
-      font-size: 2.5rem;
-      margin-bottom: 0.5rem;
-    }
-
-    header.main-header p {
-      font-style: italic;
-    }
-
-    .projects-section {
-      max-width: 1000px;
+    .portfolio {
+      max-width: 1200px;
       margin: auto;
-      padding: 2rem;
-      font-family: Arial, sans-serif;
+      padding: 60px 20px;
     }
-    .projects-section h2 {
+    .portfolio h2 {
       text-align: center;
-      margin-bottom: 2rem;
+      font-size: 2.5em;
+      margin-bottom: 40px;
+      color: #006D77;
     }
-    .projects-grid {
+    .projects {
       display: grid;
-      grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
-      gap: 2rem;
+      grid-template-columns: 1fr 1fr;
+      gap: 40px;
     }
     .project-card {
-      background: #ffffff;
-      border-left: 6px solid #f0b57f;
-      padding: 1.5rem;
-      border-radius: 10px;
-      box-shadow: 0 2px 8px rgba(0,0,0,0.05);
-      transition: transform 0.3s ease;
+      background: white;
+      border-radius: 12px;
+      box-shadow: 0 4px 16px rgba(0,0,0,0.1);
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
     }
-    .project-card:hover {
-      transform: translateY(-5px);
+    .project-card img {
+      width: 100%;
+      height: 250px;
+      object-fit: cover;
     }
-    .project-title {
-      font-size: 1.25rem;
-      color: #000;
-      margin-bottom: 0.5rem;
+    .project-card-content {
+      padding: 20px;
     }
-    .project-role,
-    .project-company {
-      font-size: 0.95rem;
-      color: #666;
-      margin-bottom: 0.5rem;
+    .project-card-content h3 {
+      margin-top: 0;
+      color: #006D77;
     }
-    .project-description {
-      margin-top: 0.5rem;
-      padding-left: 1rem;
+    .project-card-content p {
+      margin-bottom: 20px;
     }
-    .project-description li {
-      margin-bottom: 0.5rem;
+    .btn {
+      display: inline-block;
+      padding: 10px 20px;
+      background-color: #FFDDD2;
+      color: #006D77;
+      text-decoration: none;
+      border-radius: 8px;
+      font-weight: bold;
     }
-
-
-    footer {
-      text-align: center;
-      padding: 2rem;
-      font-size: 0.9rem;
-      background-color: #fff0f5;
+    @media (max-width: 768px) {
+      .projects {
+        grid-template-columns: 1fr;
+      }
     }
-    
   </style>
 </head>
 <body>
-
-  <!-- Funny Nav Bar -->
+  <!-- Navigation -->
   <header class="nav">
     <nav>
       <ul>
         <li><a href="index.html">Home</a></li>
-        <li><a href="#services">Work with Me</a></li>
+        <li><a href="index.html#services">Work with Me</a></li>
         <li><a href="portfolio.html" class="active">Portfolio</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#contact">Let's Chat</a></li>
+        <li><a href="index.html#about">About</a></li>
+        <li><a href="index.html#contact">Let's Chat</a></li>
       </ul>
     </nav>
   </header>
 
-  <!-- Funny Page Title -->
-  <header class="main-header">
-    <h1>My Projects</h1>
-  </header>
+  <!-- Portfolio Projects -->
+  <section class="portfolio">
+    <h2>Portfolio Projects</h2>
+    <div class="projects">
 
-<section class="projects-section">
-  <div class="projects-grid">
+      <div class="project-card">
+        <img src="images/project1.jpg" alt="ISO Compliance Training">
+        <div class="project-card-content">
+          <h3>ISO Compliance Onboarding Training</h3>
+          <p>Designed ISO training using the ADDIE model to onboard employees and improve quality awareness. Increased training completion by 30%.</p>
+          <a href="project1.html" class="btn">Read More →</a>
+        </div>
+      </div>
 
-    <!-- Project 1 -->
-    <div class="project-card">
-      <h3 class="project-title">Onboarding & Training System Overhaul</h3>
-      <p class="project-role"><strong>Role:</strong> Process Analyst / Training & Development Specialist</p>
-      <p class="project-company"><strong>Company:</strong> Nan Ya Plastics Corp. — SC, US | <em>Feb 2024 – Present</em></p>
-      <ul class="project-description">
-      
-      </ul>
+      <div class="project-card">
+        <img src="images/project2.jpg" alt="TEDx Coaching">
+        <div class="project-card-content">
+          <h3>TEDx Talk Coaching & Content Design</h3>
+          <p>Supported speakers with storytelling techniques and slide design based on cognitive learning principles. Improved speaker clarity and audience engagement.</p>
+          <a href="project2.html" class="btn">Read More →</a>
+        </div>
+      </div>
+
+      <div class="project-card">
+        <img src="images/project3.jpg" alt="eLearning Module">
+        <div class="project-card-content">
+          <h3>Sustainability Awareness eLearning</h3>
+          <p>Created SCORM-compatible training modules with interactive quizzes and scenario-based learning. Used Articulate and LMS integration.</p>
+          <a href="project3.html" class="btn">Read More →</a>
+        </div>
+      </div>
+
+      <div class="project-card">
+        <img src="images/project4.jpg" alt="Tableau Dashboard">
+        <div class="project-card-content">
+          <h3>Workforce Dashboard</h3>
+          <p>Built an interactive Tableau dashboard to visualize employee trends, improving data-driven decision-making for HR leaders.</p>
+          <a href="project4.html" class="btn">Read More →</a>
+        </div>
+      </div>
+
+    
+
     </div>
+  </section>
 
-    <!-- Project 2 -->
-    <div class="project-card">
-      <h3 class="project-title">Data Insights for Postsecondary Education</h3>
-      <p class="project-role"><strong>Role:</strong> Data Analyst Intern</p>
-      <p class="project-company"><strong>Company:</strong> Eduscape & NWCCU — Remote, US | <em>May – Aug 2023</em></p>
-      <ul class="project-description">
-
-      </ul>
+  <!-- Footer -->
+  <footer class="footer">
+    <p>© 2025 Iris Wu. All rights reserved.</p>
+    <div class="social">
+      <a href="https://www.linkedin.com/in/yu-chen-wu-6606a716a/?originalSubdomain=tw"><img src="images/icon-linkedin.png" alt="LinkedIn" /></a>
     </div>
-
-  
-
-  </div>
-</section>
-
-
-  <footer>
-    Built with ☕, 💻, and questionable design choices. Copyright © Me.
   </footer>
-
 </body>
 </html>
