@@ -1,0 +1,41 @@
+body {
+  font-family: Arial, sans-serif;
+  padding: 2rem;
+  background: #f8f9fa;
+}
+
+.portfolio {
+  max-width: 800px;
+  margin: auto;
+}
+
+.project-card {
+  background: white;
+  padding: 1.5rem;
+  margin-bottom: 1.5rem;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+.read-more-btn {
+  margin-top: 1rem;
+  background-color: #007BFF;
+  color: white;
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.read-more-btn:hover {
+  background-color: #0056b3;
+}
+
+.more-content {
+  margin-top: 1rem;
+  color: #444;
+}
+
+.hidden {
+  display: none;
+}
