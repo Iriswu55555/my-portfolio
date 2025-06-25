@@ -191,6 +191,13 @@ body {
   object-fit: cover;
 }
 
+.video-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh; /* optional: full screen height */
+    }
+
 @media (max-width: 768px) {
   .objectives-flex {
     flex-direction: column;
