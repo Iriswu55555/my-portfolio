@@ -53,7 +53,7 @@ body {
   left: 50%;
   transform: translate(-50%, -50%);
   text-align: center;
-  color: white;
+  color: rgb(59, 53, 53);
 }
 
 .hero-overlay h1 {
@@ -111,4 +111,97 @@ body {
   color: white;
   padding: 20px;
   margin-top: 60px;
+}
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap');
+
+body {
+  font-family: 'Noto Sans', sans-serif;
+}
+
+.steam-section {
+  padding: 4rem 2rem;
+  background-color: #f9f9f9;
+  text-align: center;
+}
+
+.steam-title {
+  font-size: 2.5rem;
+  margin-bottom: 2.5rem;
+}
+
+.steam-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.steam-card {
+  flex: 1 1 300px;
+  background-color: #ffffff;
+  border-radius: 20px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  padding: 2rem;
+  transition: transform 0.3s ease;
+}
+
+.steam-card:hover {
+  transform: translateY(-5px);
+}
+
+
+.steam-label {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.steam-text {
+  font-size: 1.1rem;
+  color: #333;
+}
+
+/* STEAM 色彩標籤 */
+.science { color: #5a8dee; }
+.technology { color: #00c896; }
+.engineering { color: #ff9f43; }
+.art { color: #f368e0; }
+.math { color: #576574; }
+.objectives-flex {
+  display: flex;
+  align-items: flex-start;
+  gap: 2rem;
+  margin-top: 1rem;
+  flex-wrap: wrap;
+}
+
+.objectives-list {
+  flex: 2;
+  padding-left: 1.2rem;
+  font-size: 1.05rem;
+  line-height: 1.6;
+}
+
+.objectives-image {
+  flex: 1;
+  max-width: 250px;
+  height: auto;
+  border-radius: 12px;
+  object-fit: cover;
+}
+
+@media (max-width: 768px) {
+  .objectives-flex {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .objectives-image {
+    max-width: 100%;
+  }
+
+  .objectives-list {
+    text-align: left;
+  }
 }
