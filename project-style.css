@@ -197,7 +197,24 @@ body {
       align-items: center;
       height: 100vh; /* optional: full screen height */
     }
+    .big-letter {
+      font-size: 80px;
+      font-weight: bold;
+      color: #0077cc;
+      margin: 0;
+    }
 
+    .stage-name {
+      font-size: 24px;
+      font-weight: 600;
+      margin: 10px 0;
+      color: #333;
+    }
+
+    .description {
+      font-size: 14px;
+      color: #555;
+    }
 @media (max-width: 768px) {
   .objectives-flex {
     flex-direction: column;
