@@ -5,6 +5,8 @@
   padding: 0;
 }
 
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap');
+
 body {
   font-family: 'Noto Sans', sans-serif;
   background-color: #f9f9f9;
@@ -12,12 +14,14 @@ body {
   line-height: 1.6;
 }
 
+/* Navigation */
 .nav {
   background: #fff;
   padding: 1rem;
   border-bottom: 1px solid #ddd;
   position: sticky;
   top: 0;
+  z-index: 999;
 }
 
 .nav ul {
@@ -25,6 +29,7 @@ body {
   justify-content: center;
   list-style: none;
   gap: 2rem;
+  flex-wrap: wrap;
 }
 
 .nav a {
@@ -32,13 +37,13 @@ body {
   color: #333;
   font-weight: bold;
 }
-/* Hero */
+
+/* Hero Section */
 .hero-image-wrapper {
   position: relative;
   width: 100%;
   max-height: 400px;
   overflow: hidden;
-
 }
 
 .hero-image {
@@ -55,6 +60,7 @@ body {
   transform: translate(-50%, -50%);
   text-align: center;
   color: rgb(59, 53, 53);
+  padding: 0 1rem;
 }
 
 .hero-overlay h1 {
@@ -75,6 +81,7 @@ body {
 .container {
   max-width: 900px;
   margin: auto;
+  padding: 0 1rem;
 }
 
 .project-details h2 {
@@ -92,13 +99,14 @@ body {
 .btn-back {
   display: inline-block;
   margin-top: 30px;
-  padding: 12px 24px;
+  padding: 1rem 2rem;
   background-color: #FFDDD2;
   color: #006D77;
   text-decoration: none;
   border-radius: 8px;
   font-weight: bold;
   transition: background 0.3s ease;
+  font-size: 1rem;
 }
 
 .btn-back:hover {
@@ -112,13 +120,10 @@ body {
   color: white;
   padding: 20px;
   margin-top: 60px;
-}
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap');
-
-body {
-  font-family: 'Noto Sans', sans-serif;
+  font-size: 1rem;
 }
 
+/* STEAM Section */
 .steam-section {
   padding: 4rem 2rem;
   background-color: #f9f9f9;
@@ -152,7 +157,6 @@ body {
   transform: translateY(-5px);
 }
 
-
 .steam-label {
   font-size: 2rem;
   margin-bottom: 1rem;
@@ -163,12 +167,14 @@ body {
   color: #333;
 }
 
-/* STEAM 色彩標籤 */
+/* STEAM Color Tags */
 .science { color: #5a8dee; }
 .technology { color: #00c896; }
 .engineering { color: #ff9f43; }
 .art { color: #f368e0; }
 .math { color: #576574; }
+
+/* Objectives Section */
 .objectives-flex {
   display: flex;
   align-items: flex-start;
@@ -192,31 +198,67 @@ body {
   object-fit: cover;
 }
 
+/* Video Centering */
 .video-container {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      height: 100vh; /* optional: full screen height */
-    }
-    .big-letter {
-      font-size: 80px;
-      font-weight: bold;
-      color: #0077cc;
-      margin: 0;
-    }
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: auto;
+  padding: 2rem;
+  flex-wrap: wrap;
+}
 
-    .stage-name {
-      font-size: 24px;
-      font-weight: 600;
-      margin: 10px 0;
-      color: #333;
-    }
+/* Stage Description Style */
+.big-letter {
+  font-size: 80px;
+  font-weight: bold;
+  color: #0077cc;
+  margin: 0;
+}
 
-    .description {
-      font-size: 14px;
-      color: #555;
-    }
+.stage-name {
+  font-size: 24px;
+  font-weight: 600;
+  margin: 10px 0;
+  color: #333;
+}
+
+.description {
+  font-size: 14px;
+  color: #555;
+}
+
+/* MEDIA QUERIES */
 @media (max-width: 768px) {
+  html {
+    font-size: 90%;
+  }
+
+  .nav ul {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .hero-overlay h1 {
+    font-size: 1.8rem;
+  }
+
+  .hero-overlay p {
+    font-size: 1rem;
+  }
+
+  .steam-title {
+    font-size: 2rem;
+  }
+
+  .steam-label {
+    font-size: 1.5rem;
+  }
+
+  .steam-text {
+    font-size: 1rem;
+  }
+
   .objectives-flex {
     flex-direction: column;
     align-items: center;
@@ -228,5 +270,20 @@ body {
 
   .objectives-list {
     text-align: left;
+  }
+
+  .video-container {
+    height: auto;
+    padding: 1rem;
+  }
+
+  .footer {
+    font-size: 0.9rem;
+    padding: 1rem;
+  }
+
+  .btn-back {
+    width: 100%;
+    text-align: center;
   }
 }
